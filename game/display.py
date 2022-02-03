@@ -19,19 +19,19 @@ class Display:
      
     def display_person(self):
         print()
-        if self.player.lives > 4:
+        if self.player.get_lives() > 4:
             print(" ___ ")
 
-        if self.player.lives > 3:
+        if self.player.get_lives() > 3:
             print("/   \\")
 
-        if self.player.lives > 2:
+        if self.player.get_lives() > 2:
             print("\   /")
 
-        if self.player.lives > 1:
+        if self.player.get_lives() > 1:
             print(" \ / ")
             
-        if self.player.lives > 0:
+        if self.player.get_lives() > 0:
             print("  O  ")
 
         if self.player.lives == 0:
