@@ -3,14 +3,15 @@ import sys
 
 class Game:
     def __init__(self):
-
+        self.still_playing = ""
+        self.player = Player()
+        self.word = Word()
+        self.secret_word = words.get_word()
+        self.display = Display(secrect_word, player)
+        
        
     def main(self):
-        player = Player()
-        word = Word()
-        secret_word = words.get_word()
-        display = Display(secrect_word, player)
-        keepGoing = True
+        still_playing = True
         print("the Word is", secrect_word)
         while player.lives > 0 and keepGoing == True:
             guess = input("Guess a letter [a-z] or input ! to quit: ")
@@ -19,12 +20,13 @@ class Game:
                 guess = input("Guess a letter [a-z]: ")
                 print("your input was ", guess)
             if guess == "!":
-                keepGoing = False
+                still_playing = False
                 break
             for letter in theword:
                 if letter == guess:
                     display.foundLetter(letter)
-                    display.display()
+                    display.display_word()
+                    display.diplay_person
         
 
 
