@@ -1,7 +1,9 @@
+import random
+
 class Word:
     def __init__(self):
-        file = open(word_list.txt)
-        dataString = file.read()
+        my_file = open("game\word_list.txt", "r")
+        dataString = my_file.read()
         self.wordlist = dataString.split("\n")
 
     def get_Word(self):
