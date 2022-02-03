@@ -4,24 +4,42 @@ from game.player import Player
 class Display:
     def __init__(self, word, player):
         self.word = word
-        if self.lives == 5:
-            str_ += "  ___ \n"
+        self.player = player
+        self.length = len(word)
+        self.letters = []
 
-        if self.lives == 4:
-            str_ += " /___\\\n"
+    def display_word(self):
+        for letter in self.word:
+            if letter in self.letters:
 
-        if self.lives == 3:
-            str_ += " \   /\n"
+                print(letter+ " ", end = "",flush = True)
+            else:
+                print("_ ", end = "", flush = True)
+        print()
+     
+    def display_person(self):
+        if self.player.lives > 4:
+            print(" ___ ")
 
-        if self.lives == 2:
-            str_ += "  \ / \n"
+        if self.player.lives > 3:
+            print("/   \\")
+
+        if self.player.lives > 2:
+            print("\   /")
+
+        if self.player.lives > 1:
+            print(" \ / ")
             
-        if self.lives == 1:
-            str_ += "   O  \n"
+        if self.player.lives > 0:
+            print("  O  ")
 
-        if self.lives == 0:
-            str_ += "  X  \n"
+        if self.player.lives == 0:
+            print("  X  ")
 
-        str_ += " /|\ \n"
-        str_ += " / \ \n"
-        str_ += "^^^^^\n"
+        print(" /|\ ")
+        print(" / \ ")
+        print("^^^^^^^")    
+
+
+    def foundLetter(self, letter):
+        self.letters.append(letter)
