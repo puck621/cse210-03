@@ -1,3 +1,6 @@
+from game.word import Word
+from game.player import Player
+
 class Display:
     def __init__(self, word, player):
         self.word = word
@@ -19,7 +22,7 @@ class Display:
             print(" ___ ")
 
         if self.player.lives > 3:
-            print("/___\")
+            print("/   \\")
 
         if self.player.lives > 2:
             print("\   /")
@@ -28,10 +31,10 @@ class Display:
             print(" \ / ")
             
         if self.player.lives > 0:
-            print("   0")
+            print("  O  ")
 
         if self.player.lives == 0:
-            print("   x")
+            print("  X  ")
 
         print(" /|\ ")
         print(" / \ ")
