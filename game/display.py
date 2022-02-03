@@ -18,6 +18,7 @@ class Display:
         print()
      
     def display_person(self):
+        print()
         if self.player.lives > 4:
             print(" ___ ")
 
