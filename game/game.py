@@ -12,15 +12,15 @@ class Game:
        
     def main(self):
         still_playing = True
-        print("the Word is", secrect_word)
         while player.lives > 0 and keepGoing == True:
-            guess = input("Guess a letter [a-z] or input ! to quit: ")
+            guess = input("Guess a letter [a-z] or type "quit" to quit: ")
             while len(guess) > 1:
                 print("Please only input one letter")
                 guess = input("Guess a letter [a-z]: ")
-                print("your input was ", guess)
-            if guess == "!":
+                print("You guessed: ", guess)
+            if guess == "quit":
                 still_playing = False
+                print("The secret word is ", secrect_word)
                 break
             for letter in theword:
                 if letter == guess:
