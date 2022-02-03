@@ -7,3 +7,17 @@ Jumper is played according to the following rules.
  - If the guess is incorrect, a line is cut on the player's parachute.
  - If the puzzle is solved the game is over.
  - If the player has no more parachute the game is over.
+
+The program must also meet the following requirements.
+
+The program must include a README file.
+The program must include class and method comments.
+The program must have at least four classes.
+The program must remain true to game play described in the overview.
+
+Group includes:
+Finley Grant Jarvis
+Lowry Williams
+Kelsey Scott
+Emmett Hart
+Alfonso Wa
