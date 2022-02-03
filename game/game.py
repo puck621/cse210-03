@@ -11,9 +11,6 @@ class Game:
         self.display = Display(self.secret_word, self.player)
 
     def main(self):
-        #For testing remove for real play
-        print("The secret word is ", self.secret_word)
-
         self.still_playing = True
         while self.player.lives > 0 and self.still_playing == True:
             guess = input("Guess a letter [A-Z] or type quit to quit: ")
