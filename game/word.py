@@ -2,9 +2,8 @@ import random
 
 class Word:
     def __init__(self):
-        my_file = open("game/word_list.txt", "r")
-        dataString = my_file.read()
-        self.wordlist = dataString.split("\n")
+        with open("game/word_list.txt", "r") as my_file:
+            self.wordlist = my_file.readlines()
 
-    def get_Word(self):
+    def get_word(self):
         return self.wordlist[random.randint(0, len(self.wordlist)-1)]
