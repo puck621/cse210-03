@@ -6,8 +6,8 @@ class Player:
         self.guesses = []
 
     def wrong_attempt(self):
-        self.lives = self.lives -1
-        self.attempts = self.attempts + 1
+        self.lives -= 1
+        self.attempts += 1
     
     def get_lives(self):
         return self.lives

@@ -15,9 +15,9 @@ The program must include class and method comments.
 The program must have at least four classes.
 The program must remain true to game play described in the overview.
 
-Group includes:
-Finley Grant Jarvis
-Lowry Williams
-Kelsey Scott
-Emmett Hart
-Alfonso Wa
+Group includes:  
+ - Finley Grant Jarvis 
+ - Lowry Williams
+ - Kelsey Scott
+ - Emmett Hart
+ - Alfonso Wa
