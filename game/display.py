@@ -9,13 +9,15 @@ class Display:
         self.letters = []
 
     def display_word(self):
-        for letter in self.word:
-            if letter in self.letters:
+        print(" ".join([letter if letter in self.letters else "_" for letter in self.word]))
+        # Equivalent to:
+        # for letter in self.word:
+        #     if letter in self.letters:
 
-                print(letter+ " ", end = "",flush = True)
-            else:
-                print("_ ", end = "", flush = True)
-        print()
+        #         print(letter+ " ", end = "",flush = True)
+        #     else:
+        #         print("_ ", end = "", flush = True)
+        # print()
      
     def display_person(self):
         print()
