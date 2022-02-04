@@ -40,6 +40,5 @@ class Display:
         print(" / \ ")
         print("^^^^^^^")    
 
-
     def foundLetter(self, letter):
         self.letters.append(letter)
