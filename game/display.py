@@ -38,7 +38,7 @@ class Display:
 
         print("  /|\ ")
         print("  / \ ")
-        print("^^^^^^^")    
+        print("\n^^^^^^^")    
 
     def foundLetter(self, letter):
         self.letters.append(letter)

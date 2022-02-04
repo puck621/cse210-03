@@ -17,7 +17,6 @@ class Game:
             guess = guess.lower()
             if guess in ["quit", "exit"]:
                 self.still_playing = False
-                print("The secret word is ", self.secret_word)
                 continue
             elif len(guess) != 1:
                 print("Please only input one letter")
@@ -36,6 +35,10 @@ class Game:
 
             self.display.display_word()
             self.display.display_person()
+        else:
+            print("Game Over")
+            print("The secret word is ", self.secret_word)
+            
 
 
 if __name__ == "__main__":
