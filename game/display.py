@@ -1,6 +1,3 @@
-from game.word import Word
-from game.player import Player
-
 class Display:
     def __init__(self, word, player):
         self.word = word
