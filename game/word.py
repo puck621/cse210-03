@@ -6,4 +6,4 @@ class Word:
             self.wordlist = my_file.readlines()
 
     def get_word(self):
-        return self.wordlist[random.randint(0, len(self.wordlist)-1)]
+        return random.choice(self.wordlist)
