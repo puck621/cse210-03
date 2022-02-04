@@ -19,25 +19,25 @@ class Display:
     def display_person(self):
         print()
         if self.player.get_lives() > 4:
-            print(" ___ ")
+            print("  ___ ")
 
         if self.player.get_lives() > 3:
-            print("/   \\")
+            print(" /___\\")
 
         if self.player.get_lives() > 2:
-            print("\   /")
+            print(" \   /")
 
         if self.player.get_lives() > 1:
-            print(" \ / ")
+            print("  \ / ")
             
         if self.player.get_lives() > 0:
-            print("  O  ")
+            print("   O  ")
 
         if self.player.lives == 0:
-            print("  X  ")
+            print("   X  ")
 
-        print(" /|\ ")
-        print(" / \ ")
+        print("  /|\ ")
+        print("  / \ ")
         print("^^^^^^^")    
 
     def foundLetter(self, letter):
