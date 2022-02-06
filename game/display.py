@@ -2,7 +2,6 @@ class Display:
     def __init__(self, word, player):
         self.word = word
         self.player = player
-        self.length = len(word)
         self.letters = []
 
     def display_word(self):
