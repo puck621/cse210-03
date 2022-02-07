@@ -5,6 +5,11 @@ class Word:
         with open("./game/word_list.txt", "r") as my_file:
             self.wordlist = my_file.readlines()
             print(self.wordlist[:10])
+        self.letters = []
+        self.word = random.choice(self.wordlist).strip().lower()
 
-    def get_word(self):
-        return random.choice(self.wordlist).lower()
+    def found_letter(self, letter):
+        self.letters.append(letter)
+    
+    def __str__(self) -> str:
+        return " ".join([letter if letter in self.letters else "_" for letter in self.word])

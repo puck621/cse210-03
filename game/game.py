@@ -1,14 +1,11 @@
 from game.word import Word
 from game.player import Player
-from game.display import Display
 
 class Game:
     def __init__(self):
         self.still_playing: bool
         self.player = Player()
         self.word = Word()
-        self.secret_word = self.word.get_word()
-        self.display = Display(self.secret_word, self.player)
 
     def main(self):
         self.still_playing = True
@@ -22,22 +19,23 @@ class Game:
                 print("Please only input one letter")
                 continue
 
-            print("You guessed: ", guess)
-            if guess in self.secret_word:
-                self.display.foundLetter(guess)
+            self.player.guesses.append(guess)
+            print("You've guessed:", ", ".join(self.player.guesses))
+            if guess in self.word.word:
+                self.word.found_letter(guess)
                 print("You found a letter!")
             else:
               self.player.wrong_attempt()
 
-            if set(self.display.letters) == set(self.secret_word):
+            if set(self.word.letters) == set(self.word.word):
                 print("You won!")
                 self.still_playing = False
 
-            self.display.display_word()
-            self.display.display_person()
+            print(self.word)
+            print(self.player)
         else:
             print("Game Over")
-            print("The secret word is ", self.secret_word)
+            print("The secret word is", self.word.word)
             
 
 
