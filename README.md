@@ -19,5 +19,5 @@ Group includes:
  - Finley Grant Jarvis 
  - Lowry Williams
  - Kelsey Scott
- - Emmett Hart
+ - Emmett Hart: Refactor and bug fixes.
  - Alfonso Wa
