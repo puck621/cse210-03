@@ -3,6 +3,13 @@ from game.player import Player
 from game.display import Display
 
 class Game:
+    """ controls the game and directs the sequence of play
+    
+    Attributes:
+        player:  player playing the game
+        word:   gets the random word for game play
+        secret_word: the random word chosen, that the player has to guess letters to solve
+        display:  gets and displays the status of the game in the terminal"""
     def __init__(self):
         self.still_playing: bool
         self.player = Player()

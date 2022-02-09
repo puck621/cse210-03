@@ -1,4 +1,5 @@
 class Display:
+    """handles the display of the jumper status in the terminal"""
     def __init__(self, word, player):
         self.word = word
         self.player = player
@@ -16,6 +17,8 @@ class Display:
         # print()
      
     def display_person(self):
+        """displays the jumper as the game progresses depending on the guess 
+        of a correct or incorrect letter from the player"""
         print()
         if self.player.get_lives() > 4:
             print("  ___ ")
