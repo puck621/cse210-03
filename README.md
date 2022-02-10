@@ -16,8 +16,8 @@ The program must have at least four classes.
 The program must remain true to game play described in the overview.
 
 Group includes:  
- - Finley Grant Jarvis 
- - Lowry Williams
- - Kelsey Scott
- - Emmett Hart: Refactor and bug fixes.
- - Alfonso Wa
+ - Group collaborated via Slack (group-thursday-5pm) and met live to complete program
+ - Finley Grant Jarvis: Joined live and helped with formatting.
+ - Lowry Williams: Joined live and organized/wrote all comments. 
+ - Kelsey Scott: Joined live. Created repository and base code for project.
+ - Emmett Hart: Joined live. Refactor and bug fixes.
