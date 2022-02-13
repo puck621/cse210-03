@@ -10,7 +10,16 @@ class Game:
         word:   gets the random word for game play
         secret_word: the random word chosen, that the player has to guess letters to solve
         display:  gets and displays the status of the game in the terminal"""
+  
     def __init__(self):
+    """ defines variables for the game
+    
+    Attributes:
+        player:  player playing the game
+        word:   gets the random word for game play
+        secret_word: the random word chosen, that the player has to guess letters to solve
+        display:  gets and displays the status of the game in the terminal"""
+    
         self.still_playing: bool
         self.player = Player()
         self.word = Word()
@@ -18,6 +27,13 @@ class Game:
         self.display = Display(self.secret_word, self.player)
 
     def main(self):
+            """ controls the game and directs the sequence of play through accessing other classes (Display, Word, Player)
+    
+    Attributes:
+        lives:  number of lives for the display
+        guess: player input letter
+        secret_word: the random word chosen, that the player has to guess letters to solve"""
+        
         self.still_playing = True
         while self.player.lives > 0 and self.still_playing == True:
             guess = input("Guess a letter [A-Z] or type quit to quit: ")
